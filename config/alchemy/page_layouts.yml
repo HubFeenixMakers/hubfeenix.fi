@@ -6,3 +6,5 @@
   unique: true
   elements: [article]
   autogenerate: [article]
+- name: general
+  elements: [section]
