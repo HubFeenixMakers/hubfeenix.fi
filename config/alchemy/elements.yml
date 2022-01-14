@@ -20,6 +20,10 @@
 - name: section
   hint: true
   contents:
+    - name: layout
+      type: EssenceSelect
+      settings:
+        select_values: ["wide"]
     - name: title
       type: EssenceText
     - name: description
