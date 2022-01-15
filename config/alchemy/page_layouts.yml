@@ -7,4 +7,4 @@
   elements: [article]
   autogenerate: [article]
 - name: general
-  elements: [section]
+  elements: [section, cardsection]

@@ -23,11 +23,38 @@
     - name: layout
       type: EssenceSelect
       settings:
-        select_values: ["wide"]
+        select_values: ["horizontal"]
     - name: title
       type: EssenceText
-    - name: description
+    - name: subtitle
       type: EssenceText
+    - name: description
+      type: EssenceRichtext
+    - name: picture
+      type: EssencePicture
+      hint: true
+- name: cardsection
+  hint: true
+  contents:
+    - name: title
+      type: EssenceText
+    - name: subtitle
+      type: EssenceText
+  nestable_elements:
+    - singlecard
+- name: singlecard
+  hint: true
+  contents:
+    - name: layout
+      type: EssenceSelect
+      settings:
+        select_values: ["vertical"]
+    - name: title
+      type: EssenceText
+    - name: subtitle
+      type: EssenceText
+    - name: description
+      type: EssenceRichtext
     - name: picture
       type: EssencePicture
       hint: true

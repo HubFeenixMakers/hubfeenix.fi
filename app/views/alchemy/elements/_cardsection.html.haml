@@ -1,0 +1,7 @@
+- cache(cardsection) do
+  = element_view_for(cardsection) do |el|
+    .title
+      = el.render :title
+    .subtitle
+      = el.render :subtitle
+    = render cardsection.nested_elements.available
