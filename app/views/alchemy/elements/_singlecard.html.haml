@@ -1,12 +1,2 @@
-- cache(singlecard) do
-  = element_view_for(singlecard) do |el|
-    .layout
-      = el.render :layout
-    .title
-      = el.render :title
-    .subtitle
-      = el.render :subtitle
-    .description
-      = el.render :description
-    .picture
-      = el.render :picture
+= element_view_for(singlecard) do |element|
+  = render("alchemy/sections/#{element.render :layout}", element: element)

@@ -1,7 +1,9 @@
 - cache(cardsection) do
   = element_view_for(cardsection) do |el|
-    .title
-      = el.render :title
-    .subtitle
-      = el.render :subtitle
-    = render cardsection.nested_elements.available
+    .text-center
+      %h2.title.text-2xl
+        = el.render :title
+      .subtitle
+        = el.render :subtitle
+      .grid.grid-cols-3
+        = render cardsection.nested_elements.available

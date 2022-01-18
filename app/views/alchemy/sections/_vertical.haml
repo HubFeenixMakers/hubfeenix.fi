@@ -1,3 +1,10 @@
-%h2= element.render :title
-= element.render :subtitle
-= element.render :picture
+.grid.grid-cols-1.m-24
+  .picture.image.h-fit.w-full
+    = element.render :picture
+  .title
+    = element.render :title
+  .subtitle
+    = element.render :subtitle
+  .description
+    = element.render :description
+
