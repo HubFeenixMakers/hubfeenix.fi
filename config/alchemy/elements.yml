@@ -23,7 +23,7 @@
     - name: layout
       type: EssenceSelect
       settings:
-        select_values: ["horizontal"]
+        select_values: ["horizontal_picture_left", "horizontal_picture_right"]
     - name: title
       type: EssenceText
     - name: subtitle
@@ -40,6 +40,10 @@
       type: EssenceText
     - name: subtitle
       type: EssenceText
+    - name: grid
+      type: EssenceSelect
+      settings:
+        select_values: ["card-1-col", "card-2-col", "card-3-col", "card-4-col"]
   nestable_elements:
     - singlecard
 - name: singlecard
@@ -48,7 +52,14 @@
     - name: layout
       type: EssenceSelect
       settings:
-        select_values: ["vertical"]
+        select_values:
+          [
+            "horizontal_picture_right",
+            "horizontal_picture_left",
+            "vertical_picture_top",
+            "vertical_picture_bottom",
+            "text_on_the_picture",
+          ]
     - name: title
       type: EssenceText
     - name: subtitle

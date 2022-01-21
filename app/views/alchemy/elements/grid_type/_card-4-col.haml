@@ -1,0 +1,5 @@
+= element_view_for(cardsection) do
+  .grid.grid-cols-4
+    = render cardsection.nested_elements.available
+    -#= cardsection.nested_elements.each do |nested_element|
+    -#  = render_element nested_element
