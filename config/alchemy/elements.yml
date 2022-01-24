@@ -17,7 +17,7 @@
       type: EssenceRichtext
       default: :article_text
       hint: true
-- name: sectionintro
+- name: section_intro
   hint: true
   contents:
     - name: title
@@ -42,7 +42,7 @@
     - name: picture
       type: EssencePicture
       hint: true
-- name: picturesection
+- name: picture_section
   hint: true
   contents:
     - name: layout
@@ -58,7 +58,7 @@
     - name: picture
       type: EssencePicture
       hint: true
-- name: cardsection
+- name: card_section
   hint: true
   contents:
     - name: title
@@ -70,8 +70,8 @@
       settings:
         select_values: ["card-1-col", "card-2-col", "card-3-col", "card-4-col"]
   nestable_elements:
-    - singlecard
-- name: singlecard
+    - card
+- name: card
   hint: true
   contents:
     - name: layout

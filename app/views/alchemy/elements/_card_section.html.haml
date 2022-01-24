@@ -1,0 +1,8 @@
+- cache(card_section) do
+  = element_view_for(card_section) do |element|
+    .text-center
+      %h2.title.text-2xl
+        = element.render :title
+      .subtitle
+        = element.render :subtitle
+    = render("alchemy/elements/grid_type/#{element.render :grid}", card_section: card_section)

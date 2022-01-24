@@ -7,4 +7,4 @@
   elements: [article]
   autogenerate: [article]
 - name: general
-  elements: [sectionintro, section, cardsection, picturesection]
+  elements: [section_intro, section, card_section]
