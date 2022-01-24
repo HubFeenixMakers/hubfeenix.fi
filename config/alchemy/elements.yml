@@ -24,13 +24,15 @@
       type: EssenceText
     - name: subtitle
       type: EssenceText
+    - name: description
+      type: EssenceRichtext
 - name: section
   hint: true
   contents:
     - name: layout
       type: EssenceSelect
       settings:
-        select_values: ["horizontal_picture_left", "horizontal_picture_right"]
+        select_values: ["picture_left", "picture_right"]
     - name: title
       type: EssenceText
     - name: subtitle
@@ -46,12 +48,7 @@
     - name: layout
       type: EssenceSelect
       settings:
-        select_values:
-          [
-            "horizontal_picture_left",
-            "horizontal_picture_right",
-            "text_on_the_picture",
-          ]
+        select_values: ["picture_left", "picture_right", "picture_text"]
     - name: title
       type: EssenceText
     - name: subtitle
@@ -80,14 +77,7 @@
     - name: layout
       type: EssenceSelect
       settings:
-        select_values:
-          [
-            "horizontal_picture_right",
-            "horizontal_picture_left",
-            "vertical_picture_top",
-            "vertical_picture_bottom",
-            "text_on_the_picture",
-          ]
+        select_values: ["picture_top", "picture_bottom", "picture_text"]
     - name: background
       type: EssenceSelect
       settings:
