@@ -17,6 +17,13 @@
       type: EssenceRichtext
       default: :article_text
       hint: true
+- name: sectionintro
+  hint: true
+  contents:
+    - name: title
+      type: EssenceText
+    - name: subtitle
+      type: EssenceText
 - name: section
   hint: true
   contents:
@@ -24,6 +31,27 @@
       type: EssenceSelect
       settings:
         select_values: ["horizontal_picture_left", "horizontal_picture_right"]
+    - name: title
+      type: EssenceText
+    - name: subtitle
+      type: EssenceText
+    - name: description
+      type: EssenceRichtext
+    - name: picture
+      type: EssencePicture
+      hint: true
+- name: picturesection
+  hint: true
+  contents:
+    - name: layout
+      type: EssenceSelect
+      settings:
+        select_values:
+          [
+            "horizontal_picture_left",
+            "horizontal_picture_right",
+            "text_on_the_picture",
+          ]
     - name: title
       type: EssenceText
     - name: subtitle
@@ -60,6 +88,10 @@
             "vertical_picture_bottom",
             "text_on_the_picture",
           ]
+    - name: background
+      type: EssenceSelect
+      settings:
+        select_values: ["darkBlue", "none"]
     - name: title
       type: EssenceText
     - name: subtitle

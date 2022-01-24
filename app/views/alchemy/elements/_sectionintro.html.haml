@@ -1,0 +1,7 @@
+- cache(sectionintro) do
+  = element_view_for(sectionintro) do |element|
+    .text-center
+      %h2.title.text-2xl
+        = element.render :title
+      .subtitle
+        = element.render :subtitle
