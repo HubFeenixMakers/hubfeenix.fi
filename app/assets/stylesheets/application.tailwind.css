@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+	font-family: futura;
+	src: url(fonts/Futura_Lt_Light.ttf);
+}
 /*
 
 @layer components {

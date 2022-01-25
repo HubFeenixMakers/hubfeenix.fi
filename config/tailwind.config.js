@@ -12,9 +12,13 @@ module.exports = {
 		extend: {
 			fontFamily: {
 				sans: ["Inter var", ...defaultTheme.fontFamily.sans],
+				futura: ["futura"],
 			},
 			colors: {
-				darkBlue: "#00506e",
+				blue_bg: "#00506e",
+				title: "#048ba8",
+				description: "#004F6D",
+				section_bg: "#fcfcf4",
 			},
 		},
 	},

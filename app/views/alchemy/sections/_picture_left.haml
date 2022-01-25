@@ -2,6 +2,6 @@
   .image.h-fit.w-full
     = element.render :picture
   .m-24
-    .text-2xl= element.render :title
-    .text-2xl= element.render :subtitle
-    = element.render :description
+    .text-4xl.text-title= element.render :title
+    .text-2xl.text-description= element.render :subtitle
+    .text-description= element.render :description

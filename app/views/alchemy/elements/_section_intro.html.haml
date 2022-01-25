@@ -1,9 +1,7 @@
 - cache(section_intro) do
   = element_view_for(section_intro) do |element|
     .text-center
-      %h2.title.text-2xl
-        = element.render :title
-      .subtitle
+      .text-title= element.render :title
+      .text-description 
         = element.render :subtitle
-      .description 
         = element.render :description
