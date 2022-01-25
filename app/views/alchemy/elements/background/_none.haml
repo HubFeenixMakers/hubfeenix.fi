@@ -1,0 +1,8 @@
+= element_view_for(card_section) do |element|
+  .font-futura
+    .text-center
+      .title.text-2xl.text-title
+        = element.render :title
+      .text-description.subtitle
+        = element.render :subtitle
+    = render("alchemy/elements/grid_type/#{element.render :grid}", card_section: card_section)

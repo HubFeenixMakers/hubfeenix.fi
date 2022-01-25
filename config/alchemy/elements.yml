@@ -69,6 +69,10 @@
       type: EssenceSelect
       settings:
         select_values: ["card-1-col", "card-2-col", "card-3-col", "card-4-col"]
+    - name: background
+      type: EssenceSelect
+      settings:
+        select_values: ["none", "darkBlue", "baige"]
   nestable_elements:
     - card
 - name: card

@@ -15,10 +15,10 @@ module.exports = {
 				futura: ["futura"],
 			},
 			colors: {
-				blue_bg: "#00506e",
+				darkBlue: "#00506e",
 				title: "#048ba8",
 				description: "#004F6D",
-				section_bg: "#fcfcf4",
+				baige: "#fcfcf4",
 			},
 		},
 	},
