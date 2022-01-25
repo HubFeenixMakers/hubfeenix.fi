@@ -68,11 +68,11 @@
     - name: grid
       type: EssenceSelect
       settings:
-        select_values: ["card-1-col", "card-2-col", "card-3-col", "card-4-col"]
+        select_values: ["1-col", "2-col", "3-col", "4-col"]
     - name: background
       type: EssenceSelect
       settings:
-        select_values: ["none", "darkBlue", "baige"]
+        select_values: ["none", "dark_blue", "beige"]
   nestable_elements:
     - card
 - name: card
@@ -85,7 +85,7 @@
     - name: background
       type: EssenceSelect
       settings:
-        select_values: ["darkBlue", "none"]
+        select_values: ["dark_blue", "none"]
     - name: title
       type: EssenceText
     - name: subtitle
