@@ -192,6 +192,7 @@ GEM
       activerecord
       kaminari-core (= 1.2.2)
     kaminari-core (1.2.2)
+    libv8-node (16.10.0.0-x86_64-linux)
     listen (3.7.1)
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
@@ -203,6 +204,8 @@ GEM
     marcel (1.0.2)
     method_source (1.0.0)
     mini_mime (1.1.2)
+    mini_racer (0.6.2)
+      libv8-node (~> 16.10.0.0)
     minitest (5.15.0)
     msgpack (1.4.2)
     multi_json (1.15.0)
@@ -349,6 +352,7 @@ DEPENDENCIES
   capybara
   haml-rails
   listen (~> 3.3)
+  mini_racer
   pg (~> 1.1)
   puma (~> 5.0)
   rack-mini-profiler (~> 2.0)
