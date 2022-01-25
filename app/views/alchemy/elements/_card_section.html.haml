@@ -1,3 +1,10 @@
 - cache(card_section) do
   = element_view_for(card_section) do |element|
-    = render("alchemy/elements/background/#{element.render :background}", card_section: card_section)
+    .font-futura{class: background_class(card_section) }
+      .text-center
+        .title.text-2xl.text-title
+          = element.render :title
+        .text-description.subtitle
+          = element.render :subtitle
+      .grid{class: grid_class(card_section)}
+        = render card_section.nested_elements.available
