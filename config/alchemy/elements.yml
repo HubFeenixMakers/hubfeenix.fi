@@ -85,7 +85,7 @@
     - name: background
       type: EssenceSelect
       settings:
-        select_values: ["dark_blue", "none"]
+        select_values: ["dark_blue", "light_blue", "coral", "none"]
     - name: title
       type: EssenceText
     - name: subtitle
