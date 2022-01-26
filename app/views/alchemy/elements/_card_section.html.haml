@@ -2,9 +2,9 @@
   = element_view_for(card_section) do |element|
     .font-futura{class: background_class(card_section) }
       .text-center
-        .title.text-2xl.text-title
+        .title.text-2xl{class: title_color_class()}
           = element.render :title
-        .text-description.subtitle
+        .subtitle{class: subtitle_color_class()}
           = element.render :subtitle
       .grid{class: grid_class(card_section)}
         = render card_section.nested_elements.available
