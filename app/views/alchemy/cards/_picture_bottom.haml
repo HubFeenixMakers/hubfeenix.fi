@@ -1,12 +1,8 @@
-.grid.grid-cols-1.m-12
-  .dark_blue
-    .title
-      = element.render :title
-    .subtitle
-      = element.render :subtitle
-    .description
-      = element.render :description
-  .my-12 
-    .picture.image.h-fit.w-full
-      = element.render :picture
-
+.title.font-black.xl:my-12.md:my-7.text-2xl.md:text-3xl.xl:text-4xl{class: title_color_class(element.element)}
+  = element.render :title
+.subtitle{class: subtitle_color_class(element.element)}
+  = element.render :subtitle
+.description{class: subtitle_color_class(element.element)}
+  = element.render :description
+.picture.image.h-fit.w-full
+  = element.render :picture
