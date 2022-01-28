@@ -1,9 +1,9 @@
 - cache(card_section) do
   = element_view_for(card_section) do |element|
-    .text-center.font-futura{class: background_class(card_section)}
-      .title.text-2xl{class: title_color_class(card_section)}
+    .text-center.font-futura.xl:m-24.lg:m-16.md:m-12.sm:m-8{class: background_class(card_section)}
+      .title.text-3xl.md:text-4xl.xl:text-5xl.mb-5.mt-5.md:mb-10.md:mt-16.xl:mt-20.xl:mb-16{class: title_color_class(card_section)}
         = element.render :title
-      .subtitle{class: subtitle_color_class(card_section)}
+      .subtitle.mb-5.xl:mb-16.md:mb-10.xl:text-xl.md:text-lg.text-sm{class: subtitle_color_class(card_section)}
         = element.render :subtitle
       .grid{class: grid_class(card_section)}
         = render card_section.nested_elements.available

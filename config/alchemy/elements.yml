@@ -32,22 +32,6 @@
     - name: layout
       type: EssenceSelect
       settings:
-        select_values: ["picture_left", "picture_right"]
-    - name: title
-      type: EssenceText
-    - name: subtitle
-      type: EssenceText
-    - name: description
-      type: EssenceRichtext
-    - name: picture
-      type: EssencePicture
-      hint: true
-- name: picture_section
-  hint: true
-  contents:
-    - name: layout
-      type: EssenceSelect
-      settings:
         select_values: ["picture_left", "picture_right", "picture_text"]
     - name: title
       type: EssenceText

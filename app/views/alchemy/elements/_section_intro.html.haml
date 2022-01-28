@@ -1,7 +1,6 @@
 - cache(section_intro) do
   = element_view_for(section_intro) do |element|
-    .text-center
-      .text-light_blue= element.render :title
-      .text-dark_blue 
-        = element.render :subtitle
-        = element.render :description
+    .text-center.font-futura.xl:mx-16.md:mx-8.sm:mx-8
+      .text-light_blue.text-3xl.md:text-4xl.xl:text-5xl.mb-5.mt-5.md:mb-10.md:mt-16.xl:mt-20.xl:mb-16= element.render :title
+      .text-dark_blue.mb-5.xl:mb-16.md:mb-10.xl:text-xl.md:text-lg.text-sm= element.render :subtitle
+      .text-dark_blue.xl:text-lg.md:text-sm.text-xs.xl:leading-9.md:leading-7.leading-6= element.render :description

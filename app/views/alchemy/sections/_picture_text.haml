@@ -1,9 +1,10 @@
 .grid.grid-cols-1.m-24
-  .picture.image.h-fit.w-full
+  .picture.image.h-fit.w-full.bg-cover.bg-center.z-0.absolute
     = element.render :picture
-  .title
-    = element.render :title
-  .subtitle
-    = element.render :subtitle
-  .description
-    = element.render :description
+  .m-20.relative.left-44
+    .title.relative.z-10.text-2xl.font-semibold.text-white
+      = element.render :title
+    .subtitle.relative.top-10.left-15.z-10.text-lg.text-white
+      = element.render :subtitle
+    .description
+      = element.render :description
